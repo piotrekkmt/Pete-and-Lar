@@ -12,6 +12,15 @@ h1 {
     font-size: 1.5em;
 }
 
+h1 a {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+h1 a:hover {
+    font-weight: bold;
+}
+
 .post-navigation {
     display: block;
     width: auto;
