@@ -7,9 +7,11 @@ layout: default
 
   <h1>{{page.title}}</h1>
   <div class="page-content">
-      ![{{page.alt}}]({{ page.image | absolute_url }})
+    <a href="{{ page.image | absolute_url }}">
+        <img src="{{ page.image | absolute_url }}" alt="image" border="0" />
+    </a>
     <p>{{ page.caption }}</p>
-     <p>{{ content }}</p>
+    <p>{{ content }}</p>
   </div>
 
   {% include post-navigation.html %}
