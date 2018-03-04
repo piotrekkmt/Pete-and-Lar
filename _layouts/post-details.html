@@ -10,6 +10,8 @@ layout: default
 
   {% include post-navigation.html %}
 
-  Permanent link to this comic: {{page.url | absolute_url}}
+  <p class="permanent-link"> Permanent link to this comic: <br />
+    <a href="{{page.url | absolute_url}}">{{page.url | absolute_url}}</a>
+  </p>
 
 </div>

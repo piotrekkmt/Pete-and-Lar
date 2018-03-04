@@ -25,9 +25,9 @@ h1 {
     margin: 1em 0;
   }
   
-  .post-navigation .next {
+.post-navigation .next {
     text-align: right;
-  }
+}
 
 .inner {
     max-width: 840px;
@@ -51,4 +51,8 @@ footer {
 
 #header_wrap .inner {
     padding: 30px 10px 10px 10px;
+}
+
+.permanent-link {
+    font-size: 0.8em;
 }
