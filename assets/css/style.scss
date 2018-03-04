@@ -72,14 +72,15 @@ footer {
 }
 
 .menu_link {
+    color: #fff;
+    font-weight: 300;
+    background: none;
+    text-shadow: #111 0px 0px 10px;
     font-size: 1.4em;
-    color: white;
-    font-weight: bold;
-    text-shadow: 2px 2px #000;
     text-decoration: none;
 }
 
 .menu_link:hover {
+    font-weight: 300;
     text-decoration: none;
-    font-weight: bold;
 }
