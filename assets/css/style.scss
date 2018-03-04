@@ -66,3 +66,19 @@ footer {
 .permanent-link {
     font-size: 0.8em;
 }
+
+.menu_items {
+    text-align: right;
+}
+
+.menu_link {
+    font-size: 1.4em;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px #000;
+    text-decoration: none;
+}
+
+.menu_link:hover {
+    text-decoration: none;
+}
