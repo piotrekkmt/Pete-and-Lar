@@ -2,7 +2,13 @@
   {% include post-navigation.html %}
 
   <h1>{{post.title}}</h1>
-  <div >{{ content }}</div>
+  <div class="page-content">
+    <a href="{{ page.image | absolute_url }}">
+        <img src="{{ page.image | absolute_url }}" alt="image" border="0" />
+    </a>
+    <p>{{ page.caption }}</p>
+    <p>{{ content }}</p>
+  </div>
 
   {% include post-navigation.html %}
 </div>
