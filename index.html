@@ -2,10 +2,8 @@
 layout: default
 ---
 
-# Pete and Lar Comic
-
-This is Peter writing stuff here
-
-Hello.
-
-Now its in HTML. How did this work.
+<div class="blog-index">  
+    {% assign post = site.posts.first %}
+    {% assign content = post.content %}
+    {% include post_detail.html %}
+</div>
