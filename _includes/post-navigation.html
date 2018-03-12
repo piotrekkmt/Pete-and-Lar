@@ -1,12 +1,5 @@
 <div class="post-navigation">
     <div class="navigation-links">
-        {% if page.previous.url %}
-            <a class="prev" href="{{page.last.url | absolute_url}}">&laquo; First page</a><br/>
-        {% endif %}
-        {% if page.next.url %}
-            <a class="next" href="{{page.first.url | absolute_url}}">Last page &raquo;</a><br/>
-        {% endif %}
-        
         {% if post.previous.url %}
             <a class="prev" href="{{posts.last.url | absolute_url}}">&laquo; First</a>
         {% endif %}

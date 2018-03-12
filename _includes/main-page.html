@@ -11,4 +11,8 @@
   </div>
 
   {% include post-navigation.html %}
+
+  <p class="permanent-link"> Permanent link to this comic: <br />
+    <a href="{{post.url | absolute_url}}">{{page.url | absolute_url}}</a>
+  </p>
 </div>
