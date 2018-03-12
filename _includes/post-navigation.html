@@ -1,10 +1,10 @@
 <div class="post-navigation">
     <div class="navigation-links">
         {% if post.previous.url %}
-            <a class="prev" href="{{posts.last.url | absolute_url}}">&laquo; First</a>
+            <a class="prev" href="{{site.posts.last.url | absolute_url}}">&laquo; First</a>
         {% endif %}
         {% if post.next.url %}
-            <a class="next" href="{{posts.first.url | absolute_url}}">Last &raquo;</a>
+            <a class="next" href="{{site.posts.first.url | absolute_url}}">Last &raquo;</a>
         {% endif %}
     </div>
     <div class="navigation-links">
