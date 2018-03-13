@@ -6,6 +6,13 @@
         {% if post.next.url %}
             <a class="next" href="{{site.posts.first.url | absolute_url}}">Last &raquo;</a>
         {% endif %}
+
+        {% if page.previous.url %}
+            <a class="prev" href="{{site.posts.last.url | absolute_url}}">&laquo; First</a>
+        {% endif %}
+        {% if page.next.url %}
+            <a class="next" href="{{site.posts.first.url | absolute_url}}">Last &raquo;</a>
+        {% endif %}
     </div>
     <div class="navigation-links">
         {% if page.previous.url %}
