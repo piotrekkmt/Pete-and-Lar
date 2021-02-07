@@ -42,9 +42,17 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Copyright © {{ (new Date().getFullYear()) }} Pete and Lar. Maintained by <a href="http://twitter.com/peterpoliwoda">@peterpoliwoda</a>.</p>
+        <p class="copyright">Copyright © <span id="copyright_year">2021</span> Pete and Lar. Maintained by <a href="http://twitter.com/peterpoliwoda">@peterpoliwoda</a>.</p>
       </footer>
     </div>
+
+    <script>
+      function copyrightYear() {
+        var n = new Date().getFullYear();
+        document.getElementById("copyright_year").innerHTML = n;
+      }
+      copyrightYear();
+    </script>
 
     {% if site.google_analytics %}
       <script type="text/javascript">
