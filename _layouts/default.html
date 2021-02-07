@@ -17,16 +17,17 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <h1 id="project_title">
-            <a href="{{site.baseurl}}"><img src="{{site.baseurl}}/assets/images/pete-and-lar-logo.jpg" /></a>
-           <!-- <a href="{{site.baseurl}}">{{ site.title | default: site.github.repository_name }}</a> -->
-           </h1>
-          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-          <section class="menu_items">
-              <a class="menu_link" href="{{site.baseurl}}">HOME</a>  
-              <a class="menu_link" href="{{site.baseurl}}/archive">ARCHIVE</a>  
-              <a class="menu_link" href="http://peterpoliwoda.me/?PaL=">BLOG</a> 
+          <div id="menu_navbar">
+            <h1 id="project_title">
+              <a href="{{site.baseurl}}"><img src="{{site.baseurl}}/assets/images/pete-and-lar-logo.jpg" /></a>
+            </h1>
+            <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+            <section class="menu_items">
+                <a class="menu_link" href="{{site.baseurl}}">HOME</a>  
+                <a class="menu_link" href="{{site.baseurl}}/archive">ARCHIVE</a>  
+                <a class="menu_link" href="http://peterpoliwoda.me/?PaL=">BLOG</a> 
             </section>
+          </div>
         </header>
     </div>
 
@@ -41,7 +42,7 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Copyright © 2018 Pete and Lar. Maintained by <a href="http://twitter.com/peterpoliwoda">@peterpoliwoda</a>.</p>
+        <p class="copyright">Copyright © {{ (new Date().getFullYear()) }} Pete and Lar. Maintained by <a href="http://twitter.com/peterpoliwoda">@peterpoliwoda</a>.</p>
       </footer>
     </div>
 
