@@ -1,32 +1,47 @@
-<div class="post-navigation">
-    <div class="navigation-links">
-        {% if post.previous.url %}
-            <a class="prev" href="{{site.posts.last.url | absolute_url}}">&laquo; First</a>
-        {% endif %}
-        {% if post.next.url %}
-            <a class="next" href="{{site.posts.first.url | absolute_url}}">Last &raquo;</a>
-        {% endif %}
-
-        {% if page.previous.url %}
-            <a class="prev" href="{{site.posts.last.url | absolute_url}}">&laquo; First</a>
-        {% endif %}
-        {% if page.next.url %}
-            <a class="next" href="{{site.posts.first.url | absolute_url}}">Last &raquo;</a>
-        {% endif %}
+<div class="row">
+    {% if post.previous.url %}
+    <div class="col">
+        <a class="btn btn-light" role="button" href="{{site.posts.last.url | absolute_url}}">&laquo; First</a>
     </div>
-    <div class="navigation-links">
-        {% if page.previous.url %}
-            <a class="prev" href="{{page.previous.url | absolute_url}}">&laquo; {{page.previous.title}}</a>
-        {% endif %}
-        {% if page.next.url %}
-            <a class="next" href="{{page.next.url | absolute_url}}">{{page.next.title}} &raquo;</a>
-        {% endif %}
-
-        {% if post.previous.url %}
-            <a class="prev" href="{{post.previous.url | absolute_url}}">&laquo; {{post.previous.title}}</a>
-        {% endif %}
-        {% if post.next.url %}
-            <a class="next" href="{{post.next.url | absolute_url}}">{{post.next.title}} &raquo;</a>
-        {% endif %}
+    {% endif %}
+    {% if post.next.url %}
+    <div class="col">
+        <a class="btn btn-light" role="button" href="{{site.posts.first.url | absolute_url}}">Last &raquo;</a>
     </div>
+    {% endif %}
+    {% if page.previous.url %}
+    <div class="col">
+        <a class="btn btn-light" role="button" href="{{site.posts.last.url | absolute_url}}">&laquo; First</a>
+    </div>
+    {% endif %}
+    {% if page.next.url %}
+    <div class="col">
+        <a class="btn btn-light" role="button" href="{{site.posts.first.url | absolute_url}}">Last &raquo;</a>
+    </div>
+    {% endif %}
+</div>
+<div class="row">
+    {% if page.previous.url %}
+    <div class="col">
+        <a class="btn btn-light" role="button" href="{{page.previous.url | absolute_url}}">&laquo;
+            {{page.previous.title}}</a>
+    </div>
+    {% endif %}
+    {% if page.next.url %}
+    <div class="col">
+        <a class="btn btn-light" role="button" href="{{page.next.url | absolute_url}}">{{page.next.title}} &raquo;</a>
+    </div>
+    {% endif %}
+
+    {% if post.previous.url %}
+    <div class="col">
+        <a class="btn btn-light" role="button" href="{{post.previous.url | absolute_url}}">&laquo;
+            {{post.previous.title}}</a>
+    </div>
+    {% endif %}
+    {% if post.next.url %}
+    <div class="col">
+        <a class="btn btn-light" role="button" href="{{post.next.url | absolute_url}}">{{post.next.title}} &raquo;</a>
+    </div>
+    {% endif %}
 </div>
