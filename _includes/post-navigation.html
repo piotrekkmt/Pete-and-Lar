@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row py-2">
     {% if post.previous.url %}
     <div class="col">
         <a class="btn btn-light" role="button" href="{{site.posts.last.url | absolute_url}}">&laquo; First</a>
@@ -20,7 +20,7 @@
     </div>
     {% endif %}
 </div>
-<div class="row">
+<div class="row py-2">
     {% if page.previous.url %}
     <div class="col">
         <a class="btn btn-light" role="button" href="{{page.previous.url | absolute_url}}">&laquo;
