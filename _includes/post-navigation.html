@@ -5,7 +5,7 @@
     </div>
     {% endif %}
     {% if post.next.url %}
-    <div class="col">
+    <div class="col d-flex justify-content-end">
         <a class="btn btn-light" role="button" href="{{site.posts.first.url | absolute_url}}">Last &raquo;</a>
     </div>
     {% endif %}
@@ -15,7 +15,7 @@
     </div>
     {% endif %}
     {% if page.next.url %}
-    <div class="col">
+    <div class="col d-flex justify-content-end">
         <a class="btn btn-light" role="button" href="{{site.posts.first.url | absolute_url}}">Last &raquo;</a>
     </div>
     {% endif %}
@@ -28,7 +28,7 @@
     </div>
     {% endif %}
     {% if page.next.url %}
-    <div class="col">
+    <div class="col d-flex justify-content-end">
         <a class="btn btn-light" role="button" href="{{page.next.url | absolute_url}}">{{page.next.title}} &raquo;</a>
     </div>
     {% endif %}
@@ -40,7 +40,7 @@
     </div>
     {% endif %}
     {% if post.next.url %}
-    <div class="col">
+    <div class="col d-flex justify-content-end">
         <a class="btn btn-light" role="button" href="{{post.next.url | absolute_url}}">{{post.next.title}} &raquo;</a>
     </div>
     {% endif %}
