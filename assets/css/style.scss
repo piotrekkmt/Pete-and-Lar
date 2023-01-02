@@ -3,12 +3,6 @@
 
 @import "jekyll-theme-slate";
 
-@font-face {
-    font-family: 'jack-armstrong';
-    src: url('/assets/fonts/jack-armstrong.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    url('/assets/fonts/jack-armstrong.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}
-
 a:hover {
     font-weight: normal;
 }
