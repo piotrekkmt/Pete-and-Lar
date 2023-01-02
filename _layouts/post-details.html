@@ -6,12 +6,12 @@ layout: default
   {% include post-navigation.html %}
 
   <h1 class="comic-title">{{page.title}}</h1>
+  <p class="text-center">{{ page.caption }}</p>
   <div class="row">
     <div class="col d-flex justify-content-center">
       <a href="{{ page.image | absolute_url }}">
         <img src="{{ page.image | absolute_url }}" alt="image" border="0" />
       </a>
-      <p>{{ page.caption }}</p>
       <p>{{ content }}</p>
     </div>
   </div>
