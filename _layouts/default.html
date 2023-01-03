@@ -12,8 +12,8 @@
     @font-face {
       font-family: 'jack-armstrong';
       src: url('{{site.baseurl}}/assets/fonts/jack-armstrong.woff') format('woff'),
-        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-        url('{{site.baseurl}}/assets/fonts/jack-armstrong.ttf') format('truetype');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('{{site.baseurl}}/assets/fonts/jack-armstrong.ttf') format('truetype');
       /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
     }
   </style>
@@ -36,7 +36,7 @@
         <img src="{{site.baseurl}}/assets/images/pete-and-lar-logo.png" alt="Pete and Lar" width="152" height="87"
           class="d-inline-block align-text-top pete-logo" />
       </a>
-      <div class="d-flex">
+      <div class="d-flex hidden-sm">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -51,28 +51,42 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="http://peterpoliwoda.me/?PaL="">BLOG</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
 
-    <!-- MAIN CONTENT -->
-    <div id=" main_content_wrap" class="outer">
-                <section id="main_content" class="inner">
-                  {{ content }}
-                </section>
-        </div>
+      <!-- MAIN CONTENT -->
+      <div id=" main_content_wrap" class="outer">
+        <section id="main_content" class="inner">
+          {{ content }}
+        </section>
+      </div>
 
 
         <!-- FOOTER  -->
         <div id="footer_wrap" class="outer">
           <footer class="inner">
-            <p class="copyright">Copyright © <span id="copyright_year">2023</span> Pete and Lar. Maintained by <a
-                href="http://twitter.com/peterpoliwoda">@peterpoliwoda</a>.</p>
+
           </footer>
         </div>
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="{{site.baseurl}}">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="{{site.baseurl}}/archive">ARCHIVE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="http://peterpoliwoda.me/?PaL="">BLOG</a>
+            </li>
+          </ul>
+          <p class="text-center text-muted copyright">Copyright © <span id="copyright_year">2023</span> Pete and Lar. Maintained by <a
+            href="http://twitter.com/peterpoliwoda">@peterpoliwoda</a>.</p>
+        </footer>
 
         <script>
           function copyrightYear() {
