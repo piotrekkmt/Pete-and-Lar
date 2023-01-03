@@ -20,6 +20,14 @@ layout: default
 
   <div class="row pt-4">
     <div class="col">
+      <p class="text-center">Share:
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-facebook"></i>
+        </a> |
+        <a href="https://twitter.com/intent/tweet?text={{ page.url | absolute_url }}" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+      </p>
       <p class="permanent-link text-center"> Permanent link to this comic: <br />
         <a href="{{page.url | absolute_url}}">{{page.url | absolute_url}}</a>
       </p>
