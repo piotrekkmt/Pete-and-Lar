@@ -1,18 +1,26 @@
 <div class="entry-content">
+
   {% include post-navigation.html %}
 
-  <h1>{{post.title}}</h1>
-  <div class="page-content">
-    <a href="{{ post.image | absolute_url }}">
-        <img src="{{ post.image | absolute_url }}" alt="image" border="0" />
-    </a>
-    <p>{{ post.caption }}</p>
-    <p>{{ content }}</p>
+  <h1 class="comic-title">{{post.title}}</h1>
+  <p class="text-center">{{ post.caption }}</p>
+  <div class="row">
+    <div class="col d-flex justify-content-center">
+      <a href="{{ post.image | absolute_url }}">
+        <img class="img-fluid border-2 border-dark" src="{{ post.image | absolute_url }}" alt="image" />
+      </a>
+      <p>{{ content }}</p>
+    </div>
   </div>
 
   {% include post-navigation.html %}
 
-  <p class="permanent-link"> Permanent link to this comic: <br />
-    <a href="{{post.url | absolute_url}}">{{page.url | absolute_url}}</a>
-  </p>
+  <div class="row pt-4">
+    <div class="col">
+      <p class="permanent-link"> Permanent link to this comic: <br />
+        <a href="{{post.url | absolute_url}}">{{page.url | absolute_url}}</a>
+      </p>
+    </div>
+  </div>
+
 </div>
