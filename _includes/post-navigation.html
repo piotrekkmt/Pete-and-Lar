@@ -1,4 +1,4 @@
-<div class="row pt-5 pb-2">
+<div class="row pt-4 pb-2">
     {% if post.previous.url %}
     <div class="col">
         <a class="btn btn-light border" role="button" href="{{site.posts.last.url | absolute_url}}">&laquo; First</a>
@@ -20,28 +20,28 @@
     </div>
     {% endif %}
 </div>
-<div class="row py-2">
+<div class="row pt-2 pb-4">
     {% if page.previous.url %}
     <div class="col">
-        <a class="btn btn-light border" role="button" href="{{page.previous.url | absolute_url}}">&laquo;
+        <a class="btn btn-lg btn-light border" role="button" href="{{page.previous.url | absolute_url}}">&laquo;
             {{page.previous.title}}</a>
     </div>
     {% endif %}
     {% if page.next.url %}
     <div class="col d-flex justify-content-end">
-        <a class="btn btn-light border" role="button" href="{{page.next.url | absolute_url}}">{{page.next.title}} &raquo;</a>
+        <a class="btn btn-lg btn-light border" role="button" href="{{page.next.url | absolute_url}}">{{page.next.title}} &raquo;</a>
     </div>
     {% endif %}
 
     {% if post.previous.url %}
     <div class="col">
-        <a class="btn btn-light border" role="button" href="{{post.previous.url | absolute_url}}">&laquo;
+        <a class="btn btn-lg btn-light border" role="button" href="{{post.previous.url | absolute_url}}">&laquo;
             {{post.previous.title}}</a>
     </div>
     {% endif %}
     {% if post.next.url %}
     <div class="col d-flex justify-content-end">
-        <a class="btn btn-light border" role="button" href="{{post.next.url | absolute_url}}">{{post.next.title}} &raquo;</a>
+        <a class="btn btn-lg btn-light border" role="button" href="{{post.next.url | absolute_url}}">{{post.next.title}} &raquo;</a>
     </div>
     {% endif %}
 </div>
