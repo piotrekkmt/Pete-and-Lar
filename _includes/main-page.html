@@ -17,6 +17,15 @@
 
   <div class="row pt-4">
     <div class="col">
+
+      <p class="text-center">Share:
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | absolute_url }}" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-facebook"></i>
+        </a> |
+        <a href="https://twitter.com/intent/tweet?text={{ post.url | absolute_url }}" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+      </p>
       <p class="permanent-link text-center"> Permanent link to this comic: <br />
         <a href="{{post.url | absolute_url}}">{{post.url | absolute_url}}</a>
       </p>
