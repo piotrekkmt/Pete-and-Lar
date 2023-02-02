@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.version       = '0.1.1'
   s.license       = 'CC0-1.0'
   s.authors       = ['Peter Poliwoda']
-  s.email         = ['opensource+jekyll-theme-slate@github.com']
-  s.homepage      = 'https://github.com/pages-themes/slate'
+  s.email         = ['contact@peterpoliwoda.me']
+  s.homepage      = 'https://www.peteandlar.com'
   s.summary       = 'Slate theme'
 
   s.files         = `git ls-files -z`.split("\x0").select do |f|
