@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name          = 'jekyll-theme-slate'
   s.version       = '0.1.1'
   s.license       = 'CC0-1.0'
-  s.authors       = ['Jason Costello', 'GitHub, Inc.']
+  s.authors       = ['Peter Poliwoda']
   s.email         = ['opensource+jekyll-theme-slate@github.com']
   s.homepage      = 'https://github.com/pages-themes/slate'
   s.summary       = 'Slate theme'
