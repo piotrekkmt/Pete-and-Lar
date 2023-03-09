@@ -1,6 +1,6 @@
 {
-  "name": "pete-and-lar",
-  "short_name": "pete-and-lar",
+  "name": "pete-and-lar-uploader",
+  "short_name": "pete-and-lar-uploader",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
