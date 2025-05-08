@@ -10,21 +10,21 @@ permalink: /feed.json
     "home_page_url": {{ '/' | absolute_url | jsonify }},
     "feed_url": {{ page.permalink | absolute_url | jsonify }},
     "user_comment": "This blog now has an RSS feed in a JSON format. We-hey",
-    "items": [{% for blog in site.blogs reversed %}
+    "items": [{% for post in site.posts reversed %}
         {
-            "id": {{ blog.url | absolute_url | jsonify }},
-            "url": {{ blog.url | absolute_url | jsonify }},
+            "id": {{ post.url | absolute_url | jsonify }},
+            "url": {{ post.url | absolute_url | jsonify }},
             "language": "en",
-            "title": {{ blog.title | jsonify }},
-            "summary": {{ blog.description | jsonify }},
-            "content_html": {{ blog.content | jsonify }},
-            "date_published": {{ blog.date | date_to_xmlschema | jsonify }},
-            "date_modified": {{ blog.last_modified_at | date_to_xmlschema  | jsonify }},
-            "image": "{{ blog.image.path }}",
-            "banner_image": "{{ blog.image.path }}",
-            "authors": [{{ blog.author | jsonify }}],
-            "categories": {{ blog.categories | jsonify }},
-            "tags": {{ blog.tags | jsonify }}
+            "title": {{ post.title | jsonify }},
+            "summary": {{ post.description | jsonify }},
+            "content_html": {{ post.content | jsonify }},
+            "date_published": {{ post.date | date_to_xmlschema | jsonify }},
+            "date_modified": {{ post.last_modified_at | date_to_xmlschema  | jsonify }},
+            "image": "{{ post.image.path }}",
+            "banner_image": "{{ post.image.path }}",
+            "authors": [{{ post.author | jsonify }}],
+            "categories": {{ post.categories | jsonify }},
+            "tags": {{ post.tags | jsonify }}
         }
         {% unless forloop.last %},{% endunless %}{% endfor %}
     ]
