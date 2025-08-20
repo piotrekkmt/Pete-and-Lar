@@ -21,7 +21,7 @@ permalink: /feed.json
             "date_published": {{ post.date | date_to_xmlschema | jsonify }},
             "date_modified": {{ post.last_modified_at | date_to_xmlschema  | jsonify }},
             "image": "{{ post.image.path }}",
-            "banner_image": "{{ post.image.path }}",
+            "banner_image": "{{ post.image }}",
             "authors": [{{ post.author | jsonify }}],
             "categories": {{ post.categories | jsonify }},
             "tags": {{ post.tags | jsonify }}
